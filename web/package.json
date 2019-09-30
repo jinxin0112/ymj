@@ -136,5 +136,9 @@
     "presets": [
       "react-app"
     ]
+  },
+  "devDependencies": {
+    "@types/styled-components": "^4.1.19",
+    "styled-components": "^4.4.0"
   }
 }
