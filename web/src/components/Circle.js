@@ -1,12 +1,13 @@
 import React from 'react';
 
-const colorArray = ['355,85,80', '9,80,100', '343,81,45'];
+const colorArray = ['112,58,14', '67,27,4', '169,120,58'];
 
 export const Canvas = () => {
   React.useEffect(() => {
     var canvas = document.querySelector('canvas');
     canvas.height = window.innerHeight;
     canvas.width = window.innerWidth;
+    canvas.style = 'background: #000';
     var c = canvas.getContext('2d');
 
     window.addEventListener('resize', function() {
@@ -111,9 +112,9 @@ export const Canvas = () => {
 
   return (
     <>
-      <canvas id="canvas"></canvas>
+      <canvas id="canvas" style={{ backgroud: '#000' }}></canvas>
     </>
   );
-};
+}
 
 export default Canvas;

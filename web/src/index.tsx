@@ -6,6 +6,8 @@ import Theme from '@components/Theme';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 
+import './index.css';
+
 ReactDOM.render(
   <Theme>
     <App />
