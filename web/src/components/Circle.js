@@ -1,7 +1,5 @@
 import React from 'react';
 
-const colorArray = ['112,58,14', '67,27,4', '169,120,58'];
-
 export const Canvas = () => {
   React.useEffect(() => {
     window.requestAnimFrame =
@@ -331,22 +329,6 @@ export const Canvas = () => {
       emitter.update();
 
       window.requestAnimFrame(loop);
-    }
-
-    function rain() {
-      emitter = new Emitter(100, 60, settings.rain);
-    }
-
-    function abstract() {
-      emitter = new Emitter(canvas.width / 2, canvas.height / 2, settings.abstract);
-    }
-
-    function blood() {
-      emitter = new Emitter(canvas.width / 2, canvas.height / 2, settings.blood);
-    }
-
-    function fire() {
-      emitter = new Emitter(canvas.width / 2, canvas.height / 2, settings.fire);
     }
 
     loop();
